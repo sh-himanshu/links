@@ -133,10 +133,4 @@ export function renderLocation(): void {
   locEl.innerHTML = svgIcon("location") + `<span>${location}</span>`;
 }
 
-export function renderFooter(): void {
-  const footerEl = document.getElementById("footer");
-  if (!footerEl) return;
 
-  const year = new Date().getFullYear();
-  footerEl.innerHTML = `&copy; ${year} Himanshu Sharma`;
-}
